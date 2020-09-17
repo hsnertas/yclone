@@ -15,11 +15,13 @@ function Header() {
     <div className="header">
       <div className="header__left">
         <MenuIcon />
+        <Link to="/">
         <img
           className="header__logo"
           src="https://mediatrend.mediamarkt.com.tr/wp-content/uploads/2015/05/YouTube-logo-full_color-e1449696711622.jpg"
           alt="youtube"
         />
+        </Link>
       </div>
       <div className="header__input">
         <input onChange={e=>setInputSearch(e.target.value)} value={inputSearch} placeholder="Search" type="text" />

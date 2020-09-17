@@ -11,8 +11,10 @@ function App() {
     <div className="qpp">
       <Router>
         <Switch>
-          <Route path="/search">
+          <Route path="/search/:searchTerm">
           <Header />
+          <Sidebar />
+          
           </Route>
           <Route path="/">
             {/* Header Component-1 */}
