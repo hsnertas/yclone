@@ -5,7 +5,7 @@ function VideoRow({views, subs, description, channel, title, image}) {
         <div className="videoRow">
             <img src={image} alt=""/>
             <div className="videoRow__text">
-    <h3>{title}</h3>
+    <h2>{title}</h2>
     <p className="videoRow__headline" >{channel} <span className="videoRow__subs">{subs}</span> subscribers {views} </p>
 <p className="videoRow__description">{description}</p>
             </div>
