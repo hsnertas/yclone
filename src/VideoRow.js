@@ -6,8 +6,8 @@ function VideoRow({views, subs, description, channel, title, image}) {
             <img src={image} alt=""/>
             <div className="videoRow__text">
     <h3>{title}</h3>
-    <p>{channel} {subs} subscribers {views} </p>
-<p>{description}</p>
+    <p className="videoRow__headline" >{channel} <span className="videoRow__subs">{subs}</span> subscribers {views} </p>
+<p className="videoRow__description">{description}</p>
             </div>
         </div>
     )
